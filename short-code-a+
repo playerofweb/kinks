@@ -70,7 +70,7 @@ global $htmlvar_name;
     
           <li><a href="#listing_description"><?php _e('Overview',DOMAIN);?></a></li>
                   
-		<?php if(@$googlemap_setting['direction_map']=='yes' && $listing_address):?>
+        <?php if(@$googlemap_setting['direction_map']=='yes' && $listing_address):?>
           <li><a href="#listing_map"><?php _e('Map',DOMAIN);?></a></li>
           <?php endif;?>
 
@@ -90,7 +90,7 @@ global $htmlvar_name;
           <li><a href="#facility"><?php echo $htmlvar_name['basic_inf']['proprty_facility']['label'];?></a></li>
           <?php endif;?>
           
-		<?php if($special_offer!="" && $htmlvar_name['basic_inf']['proprty_feature']): ?>
+	<?php if($special_offer!="" && $htmlvar_name['basic_inf']['proprty_feature']): ?>
           <li><a href="#special_offer"><?php echo $htmlvar_name['basic_inf']['proprty_feature']['label'];?></a></li>
           <?php endif;?>
 
@@ -98,7 +98,7 @@ global $htmlvar_name;
           <li><a href="#booking"><?php echo $htmlvar_name['basic_inf']['proprty_booking']['label'];?></a></li>
           <?php endif;?>
           
-		<?php if($video!="" && $htmlvar_name['basic_inf']['video']):?>
+	<?php if($video!="" && $htmlvar_name['basic_inf']['video']):?>
           <li><a href="#listing_video"><?php echo $htmlvar_name['basic_inf']['video']['label'];?></a></li>
           <?php endif;?>
 		<?php
